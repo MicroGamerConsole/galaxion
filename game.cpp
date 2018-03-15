@@ -4,7 +4,8 @@
 
 #include "game.h"
 
-extern Arduboy mArduboy;
+extern Arduboy2 mArduboy;
+extern ArduboyTones audio;
 extern Game mGame;
 
 #include "bmp_title.h"
@@ -68,7 +69,7 @@ void Game::init_stage()
 
   // ---------------------------------------------- Play Game Opening Music ---
   if (mArduboy.audio.enabled()) {
-    mArduboy.tunes.playScore(snd_start);
+    audio.tones(snd_start);
   }
 }
 
@@ -451,20 +452,20 @@ void Game::draw_stage(int frame)
   }
 
   // ----------------------------------------------------------- Draw Stars ---
-  for (int idx = 0; idx < 20; idx ++) {
-    if (random(0, 8) > 1) {
-      mArduboy.drawPixel(star[idx].x, star[idx].y / 8, WHITE);
-    }
-    if (random(0, 8) > 1) {
-      mArduboy.drawPixel(127 - star[idx].x, star[idx].y / 8, WHITE);
-    }
-    star[idx].y += star[idx].speed;
-    if ((star[idx].y / 8) >= 64) {
-      star[idx].x = random(0, 19);
-      star[idx].y = 0;
-      star[idx].speed = random(0, 4) + 2;
-    }
-  }
+//  for (int idx = 0; idx < 20; idx ++) {
+//    if (random(0, 8) > 1) {
+//      mArduboy.drawPixel(star[idx].x, star[idx].y / 8, WHITE);
+//    }
+//    if (random(0, 8) > 1) {
+//      mArduboy.drawPixel(127 - star[idx].x, star[idx].y / 8, WHITE);
+//    }
+//    star[idx].y += star[idx].speed;
+//    if ((star[idx].y / 8) >= 64) {
+//      star[idx].x = random(0, 19);
+//      star[idx].y = 0;
+//      star[idx].speed = random(0, 4) + 2;
+//    }
+//  }
 
   // ------------------------------------------------------- Draw Game Mode ---
   if (mMode == GAME_MODE_PRACTICE) {

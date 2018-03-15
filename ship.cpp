@@ -6,7 +6,8 @@
 
 #include "bmp_chara.h"
 
-extern Arduboy mArduboy;
+extern Arduboy2 mArduboy;
+extern ArduboyTones audio;
 extern Game mGame;
 
 //=============================================================================
@@ -86,8 +87,8 @@ void Ship::do_state(int frame)
 	state = SHIP_ST_LOST;
       }
     }
-    if (mArduboy.audio.enabled() && !mArduboy.tunes.playing()) {
-      mArduboy.tunes.tone(100 + (frame & 3) * 10, 20);
+    if (mArduboy.audio.enabled() && !audio.playing()) {
+      audio.tone(100 + (frame & 3) * 10, 20);
     }
     break;
   case SHIP_ST_LOST:

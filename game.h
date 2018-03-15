@@ -5,7 +5,8 @@
 #ifndef _GAME_H
 #define _GAME_H
 
-#include "Arduboy.h"
+#include "Arduboy2.h"
+#include "ArduboyTones.h"
 #include "common.h"
 
 #include "ship.h"

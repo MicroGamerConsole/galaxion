@@ -7,7 +7,8 @@
 #include "bmp_chara.h"
 #include "sound.h"
 
-extern Arduboy mArduboy;
+extern Arduboy2 mArduboy;
+extern ArduboyTones audio;
 extern Game mGame;
 
 //=============================================================================
@@ -485,7 +486,7 @@ int Convoy::defeat_alien(Position *missile)
       exp = new Explosion();
       exp->init(chk_x - 3, chk_y - 3, 0);
       if (mArduboy.audio.enabled()) {
-	mArduboy.tunes.playScore(snd_zakoexp);
+	audio.tones(snd_zakoexp);
       }
 
       delete_alien(row, col);
@@ -525,7 +526,7 @@ int Convoy::defeat_alien(Position *missile)
 
 	if (enemy[idx]->type == BOSS_ALIEN) {
 	  if (mArduboy.audio.enabled()) {
-	    mArduboy.tunes.playScore(snd_bossexp);
+	    audio.tones(snd_bossexp);
 	  }
 	  if (bscore != NULL) delete bscore;
 	  bscore = new BossScore();
@@ -551,7 +552,7 @@ int Convoy::defeat_alien(Position *missile)
 	  }
 
 	  if (mArduboy.audio.enabled()) {
-	    mArduboy.tunes.playScore(snd_zakoexp);
+	    audio.tones(snd_zakoexp);
 	  }
 	}
 
@@ -830,8 +831,8 @@ void Convoy::do_state(int frame, bool attack, int ship_x, int ship_y)
   }
   if (freq != 0) {
     freq += (frame & 3) * 10;
-    if (mArduboy.audio.enabled() && !mArduboy.tunes.playing()) {
-      mArduboy.tunes.tone(freq, 20);
+    if (mArduboy.audio.enabled() && !audio.playing()) {
+      audio.tone(freq, 20);
     }
   }
 

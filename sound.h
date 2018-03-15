@@ -1,6 +1,6 @@
 // Playtune bytestream for file "game_start.mid" created by MIDITONES V1.14 on Tue Feb 14 22:18:23 2017
 // command line: ../../miditones/miditones -t1 game_start 
-const unsigned char PROGMEM snd_start [] = {
+const uint16_t snd_start [] = {
 1,0, 0x91,83, 0,16, 0x91,82, 0,16, 0x91,80, 0,16, 0x91,78, 0,16, 0x91,76, 0,16, 0x91,75, 0,16, 
 0x91,73, 0,16, 0x91,71, 0,16, 0x91,82, 0,16, 0x91,80, 0,16, 0x91,78, 0,16, 0x91,66, 0,66, 0x91,71, 
 0,66, 0x91,66, 0,66, 0x91,71, 0,66, 0x91,75, 0,66, 0x91,71, 0,66, 0x91,75, 0,66, 0x91,78, 0,66, 
@@ -17,7 +17,7 @@ const unsigned char PROGMEM snd_start [] = {
 
 // Playtune bytestream for file "zakoexp.mid" created by MIDITONES V1.14 on Tue Feb 14 22:18:30 2017
 // command line: ../../miditones/miditones -t1 zakoexp 
-const unsigned char PROGMEM snd_zakoexp [] = {
+const uint16_t snd_zakoexp [] = {
 0,38, 0x91,69, 0,16, 0x91,67, 0,16, 0x91,65, 0,16, 0x91,64, 0,16, 0x91,62, 0,16, 0x91,60, 0,16, 
 0x91,69, 0,16, 0x91,67, 0,16, 0x91,65, 0,16, 0x91,64, 0,16, 0x91,62, 0,16, 0x91,60, 0,16, 0x91,60, 
 0,16, 0x91,62, 0,16, 0x91,64, 0,16, 0x91,65, 0,16, 0x91,67, 0,16, 0x91,69, 0,16, 0x91,71, 0,16, 
@@ -28,7 +28,7 @@ const unsigned char PROGMEM snd_zakoexp [] = {
 
 // Playtune bytestream for file "bossexp.mid" created by MIDITONES V1.14 on Tue Feb 14 22:18:34 2017
 // command line: ../../miditones/miditones -t1 bossexp 
-const unsigned char PROGMEM snd_bossexp [] = {
+const uint16_t snd_bossexp [] = {
 0,49, 0x91,60, 0,16, 0x91,59, 0,16, 0x91,57, 0,16, 0x91,55, 0,16, 0x91,57, 0,16, 0x91,59, 0,16, 
 0x91,60, 0,16, 0x91,62, 0,16, 0x91,64, 0,16, 0x91,65, 0,16, 0x91,67, 0,16, 0x91,68, 0,16, 0x81, 0,33, 
 0x91,67, 0,16, 0x91,65, 0,16, 0x91,64, 0,16, 0x91,62, 0,16, 0x91,60, 0,16, 0x91,62, 0,16, 0x91,64, 

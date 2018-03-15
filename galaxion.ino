@@ -2,16 +2,16 @@
 // Galaxian for Arduboy
 //
 
-#include "Arduboy.h"
+#include "Arduboy2.h"
 #include "game.h"
 
-Arduboy mArduboy;
+Arduboy2 mArduboy;
+ArduboyTones sound(mArduboy.audio.enabled);
 Game mGame;
 
 void setup()
 {
-  //mArduboy.begin();
-  mArduboy.beginNoLogo();
+  mArduboy.begin();
   mArduboy.initRandomSeed();
   mArduboy.setFrameRate(60);
 
