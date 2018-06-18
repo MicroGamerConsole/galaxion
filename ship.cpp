@@ -6,8 +6,8 @@
 
 #include "bmp_chara.h"
 
-extern Arduboy2 mArduboy;
-extern ArduboyTones audio;
+extern MicroGamer mArduboy;
+extern MicroGamerTones audio;
 extern Game mGame;
 
 //=============================================================================

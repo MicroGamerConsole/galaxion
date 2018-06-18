@@ -5,7 +5,7 @@
 #ifndef _ENEMY_H
 #define _ENEMY_H
 
-#include "Arduboy2.h"
+#include "MicroGamer.h"
 #include "common.h"
 
 //=============================================================================

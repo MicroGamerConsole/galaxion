@@ -5,7 +5,7 @@
 #ifndef _COMMON_H
 #define _COMMON_H
 
-#include "Arduboy2.h"
+#include "MicroGamer.h"
 
 //=============================================================================
 #define FRAMES_IN_SECOND (60)

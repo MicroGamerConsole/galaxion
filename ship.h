@@ -5,7 +5,7 @@
 #ifndef _SHIP_H
 #define _SHIP_H
 
-#include "Arduboy2.h"
+#include "MicroGamer.h"
 #include "common.h"
 
 //=============================================================================

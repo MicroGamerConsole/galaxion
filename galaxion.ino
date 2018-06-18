@@ -2,11 +2,11 @@
 // Galaxian for Arduboy
 //
 
-#include "Arduboy2.h"
+#include "MicroGamer.h"
 #include "game.h"
 
-Arduboy2 mArduboy;
-ArduboyTones sound(mArduboy.audio.enabled);
+MicroGamer mArduboy;
+MicroGamerTones sound(mArduboy.audio.enabled);
 Game mGame;
 
 void setup()
