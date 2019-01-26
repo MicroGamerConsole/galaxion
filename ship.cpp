@@ -35,7 +35,7 @@ void Ship::check_input(int frame)
   switch (state) {
   case SHIP_ST_READY:
     if (dont_shoot <= 0
-	&& (mArduboy.pressed(A_BUTTON) || mArduboy.pressed(B_BUTTON))) {
+	&& (mArduboy.pressed(Y_BUTTON) || mArduboy.pressed(X_BUTTON))) {
       state = SHIP_ST_SHOOTING;
       if (missile == NULL) {
 	missile = new Position(pos.get_x() + 2, pos.get_y());

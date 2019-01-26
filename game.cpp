@@ -140,7 +140,7 @@ void Game::check_input()
     }
 
   case GAME_ST_GAMEOVER:
-    if (mArduboy.pressed(A_BUTTON) || mArduboy.pressed(B_BUTTON)) {
+    if (mArduboy.pressed(Y_BUTTON) || mArduboy.pressed(X_BUTTON)) {
       mState = GAME_ST_START;
       mFrame = 0;
       init_stage();
@@ -418,7 +418,7 @@ void Game::draw_title(int frame)
   x = (128-6*13)/2;
   y = 54;
   mArduboy.setCursor(x, y);
-  mArduboy.print("PUSH A BUTTON");
+  mArduboy.print("PUSH Y BUTTON");
 }
 
 //=============================================================================
